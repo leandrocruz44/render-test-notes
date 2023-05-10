@@ -13,8 +13,8 @@ const requestLogger = (request, response, next) => {
 }
 
 app.use(express.json())
-app.use(express.static('build'))
 app.use(cors())
+app.use(express.static('build'))
 app.use(requestLogger)
 
 
@@ -37,14 +37,6 @@ let notes = [
     }
   ]
 
-// const app = http.createServer((request, response) => {
-//   response.writeHead(200, { 'Content-Type': 'application/json' })
-//   response.end(JSON.stringify(notes))
-// })
-
-// const PORT = 3001
-// app.listen(PORT)
-// console.log(`Server running on port ${PORT}`) *** Only node command ***
 
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
