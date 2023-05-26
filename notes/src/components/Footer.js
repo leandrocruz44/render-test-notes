@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div style={footerStyle}>
             <br />
-            <em>Um teste pra ver se atualiza</em>
+            <em>Leandro Cruz - Full Stack Open - University of Helsinki</em>
         </div>
     )
 }
