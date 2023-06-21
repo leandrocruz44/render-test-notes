@@ -71,7 +71,7 @@ describe('addition of a new note', () => {
   test('succeeds with valid note', async () => {
     const newNote = {
       content: 'async/await simplifies making async calls',
-      important: true
+      important: true,
     }
 
     await api
